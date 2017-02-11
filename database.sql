@@ -33,7 +33,7 @@ CREATE TABLE `album` (
   PRIMARY KEY (`id_album`),
   KEY `album_id_artista_foreign` (`id_artista`),
   CONSTRAINT `album_id_artista_foreign` FOREIGN KEY (`id_artista`) REFERENCES `artista` (`id_artista`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `album` (
 
 LOCK TABLES `album` WRITE;
 /*!40000 ALTER TABLE `album` DISABLE KEYS */;
-INSERT INTO `album` VALUES (1,1,'Black Ice',1988,12,'2017-02-01 23:14:02','2017-02-01 23:14:02'),(2,13,'Chinese Democracy',2014,14,'2017-02-02 03:58:14','2017-02-02 03:58:14'),(3,2,'Un asco',2013,9,'2017-02-02 03:58:59','2017-02-02 03:58:59'),(4,4,'El nombre del sentimiento',2008,9,'2017-02-02 03:59:30','2017-02-02 03:59:30'),(5,19,'Na balada',2011,15,'2017-02-02 04:00:01','2017-02-02 04:00:01'),(6,5,'El tiempo otra vez avanza',2014,12,'2017-02-02 04:00:26','2017-02-02 04:00:26'),(7,10,'Thriller',1982,21,'2017-02-02 04:00:49','2017-02-02 04:00:49'),(8,14,'Yo Soy... Sasha Feroz',2008,16,'2017-02-02 04:01:18','2017-02-02 04:01:18'),(9,12,'Clarity',2014,17,'2017-02-02 04:01:44','2017-02-02 04:01:44'),(10,11,'Listen Again',2015,46,'2017-02-02 04:02:11','2017-02-02 04:02:11'),(11,3,'La Licuadora del Sabor',2015,5,'2017-02-02 04:02:42','2017-02-02 04:02:42'),(12,20,'Tré',2012,12,'2017-02-02 04:03:03','2017-02-02 04:03:03'),(13,9,'Live Forever',2011,25,'2017-02-02 04:03:26','2017-02-02 04:03:26'),(14,1,'Back in Black',1980,10,'2017-02-02 04:04:08','2017-02-02 04:04:08'),(15,8,'Hasta El Amanecer',2016,8,'2017-02-02 04:04:35','2017-02-02 04:04:35'),(16,21,'The Marshall Mathers LP 2',2013,16,'2017-02-02 04:05:06','2017-02-02 04:05:06'),(17,22,'Todo comenzo bailando',2015,12,'2017-02-02 04:15:24','2017-02-02 04:15:24'),(18,17,'From Sleep',2015,7,'2017-02-02 04:16:06','2017-02-02 04:16:06'),(19,16,'Formula Vol. 2',2014,11,'2017-02-02 04:17:13','2017-02-02 04:17:13'),(20,15,'Texas cannonball',1971,10,'2017-02-02 04:17:52','2017-02-02 04:17:52'),(21,18,'Jaco Pastorius',1976,9,'2017-02-02 04:18:41','2017-02-02 04:18:41'),(22,23,'15 Exitos',1969,12,'2017-02-02 04:20:16','2017-02-02 04:20:16'),(23,24,'El Mago del Tango',2016,30,'2017-02-02 04:25:35','2017-02-02 04:25:35');
+INSERT INTO `album` VALUES (1,1,'Black Ice',1988,12,'2017-02-01 23:14:02','2017-02-01 23:14:02'),(2,13,'Chinese Democracy',2014,14,'2017-02-02 03:58:14','2017-02-02 03:58:14'),(3,2,'Un asco',2013,9,'2017-02-02 03:58:59','2017-02-02 03:58:59'),(4,4,'El nombre del sentimiento',2008,9,'2017-02-02 03:59:30','2017-02-02 03:59:30'),(5,19,'Na balada',2011,15,'2017-02-02 04:00:01','2017-02-02 04:00:01'),(6,5,'El tiempo otra vez avanza',2014,12,'2017-02-02 04:00:26','2017-02-02 04:00:26'),(7,10,'Thriller',1982,21,'2017-02-02 04:00:49','2017-02-02 04:00:49'),(8,14,'Yo Soy... Sasha Feroz',2008,16,'2017-02-02 04:01:18','2017-02-02 04:01:18'),(9,12,'Clarity',2014,17,'2017-02-02 04:01:44','2017-02-02 04:01:44'),(10,11,'Listen Again',2015,46,'2017-02-02 04:02:11','2017-02-02 04:02:11'),(11,3,'La Licuadora del Sabor',2015,5,'2017-02-02 04:02:42','2017-02-02 04:02:42'),(12,20,'Tré',2012,12,'2017-02-02 04:03:03','2017-02-02 04:03:03'),(13,9,'Live Forever',2011,25,'2017-02-02 04:03:26','2017-02-02 04:03:26'),(14,1,'Back in Black',1980,10,'2017-02-02 04:04:08','2017-02-02 04:04:08'),(15,8,'Hasta El Amanecer',2016,8,'2017-02-02 04:04:35','2017-02-02 04:04:35'),(16,21,'The Marshall Mathers LP 2',2013,16,'2017-02-02 04:05:06','2017-02-02 04:05:06'),(17,22,'Todo comenzo bailando',2015,12,'2017-02-02 04:15:24','2017-02-02 04:15:24'),(18,17,'From Sleep',2015,7,'2017-02-02 04:16:06','2017-02-02 04:16:06'),(19,16,'Formula Vol. 2',2014,11,'2017-02-02 04:17:13','2017-02-02 04:17:13'),(20,15,'Texas cannonball',1971,10,'2017-02-02 04:17:52','2017-02-02 04:17:52'),(21,18,'Jaco Pastorius',1976,9,'2017-02-02 04:18:41','2017-02-02 04:18:41'),(22,23,'15 Exitos',1969,12,'2017-02-02 04:20:16','2017-02-02 04:20:16'),(23,24,'El Mago del Tango',2016,30,'2017-02-02 04:25:35','2017-02-02 04:25:35'),(24,21,'Recovery',2010,4,'2017-02-07 05:05:44','2017-02-07 05:05:44'),(25,7,'Despacito',2017,1,'2017-02-09 14:55:59','2017-02-09 14:55:59');
 /*!40000 ALTER TABLE `album` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -97,7 +97,7 @@ CREATE TABLE `cancion` (
   PRIMARY KEY (`id_cancion`),
   KEY `cancion_id_album_foreign` (`id_album`),
   CONSTRAINT `cancion_id_album_foreign` FOREIGN KEY (`id_album`) REFERENCES `album` (`id_album`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -106,7 +106,7 @@ CREATE TABLE `cancion` (
 
 LOCK TABLES `cancion` WRITE;
 /*!40000 ALTER TABLE `cancion` DISABLE KEYS */;
-INSERT INTO `cancion` VALUES (1,1,'Big Jack','mp3','04:01','uploads/music/Metal/AC-DC/Black Ice/Big Jack.mp3','1988','Español',30,'2017-02-01 23:14:15','2017-02-02 04:34:27'),(2,23,'Por Una Cabeza','mp3','02:44','uploads/music/Tango/Carlos Gardel/El Mago del Tango/Por Una Cabeza.mp3','2016','Español',0,'2017-02-02 04:26:13','2017-02-02 04:26:13'),(3,6,'Viajando Sin Espada','mp3','03:24','uploads/music/Rock/No Te Va A Gustar/El tiempo otra vez avanza/Viajando Sin Espada.mp3','2014','Español',3,'2017-02-02 04:26:40','2017-02-02 04:26:40'),(4,6,'Me Ilumina Hoy','mp3','03:19','uploads/music/Rock/No Te Va A Gustar/El tiempo otra vez avanza/Me Ilumina Hoy.mp3','2014','Español',2,'2017-02-02 04:27:03','2017-02-02 04:27:03'),(5,6,'Detras Del Cerro','mp3','03:44','uploads/music/Rock/No Te Va A Gustar/El tiempo otra vez avanza/Detras Del Cerro.mp3','2014','Español',1,'2017-02-02 04:27:16','2017-02-02 04:27:16'),(6,15,'Hasta El Amanecer','mp3','03:12','uploads/music/Reggaeton/Nicky Jam/Hasta El Amanecer/Hasta El Amanecer.mp3','2016','Español',2,'2017-02-02 04:27:48','2017-02-02 04:27:48'),(7,15,'Voy A Beber','mp3','03:32','uploads/music/Reggaeton/Nicky Jam/Hasta El Amanecer/Voy A Beber.mp3','2016','Español',19,'2017-02-02 04:28:00','2017-02-02 04:28:00'),(8,15,'Te Busco','mp3','03:51','uploads/music/Reggaeton/Nicky Jam/Hasta El Amanecer/Te Busco.mp3','2016','Español',9,'2017-02-02 04:28:14','2017-02-02 04:28:14'),(9,5,'Fugidinha','mp3','03:11','uploads/music/Música Brasileña/Michel Telo/Na balada/Fugidinha.mp3','2011','Español',23,'2017-02-02 04:28:32','2017-02-02 04:28:32'),(10,5,'Ai Se Eu Te Pego','mp3','02:46','uploads/music/Música Brasileña/Michel Telo/Na balada/Ai Se Eu Te Pego.mp3','2011','Español',7,'2017-02-02 04:28:41','2017-02-02 04:28:41'),(11,8,'If I Were A Boy','mp3','04:09','uploads/music/Dance/Beyonce/Yo Soy... Sasha Feroz/If I Were A Boy.mp3','2008','Español',2,'2017-02-02 04:29:01','2017-02-02 04:29:01'),(12,8,'Halo','mp3','03:45','uploads/music/Dance/Beyonce/Yo Soy... Sasha Feroz/Halo.mp3','2008','Español',1,'2017-02-02 04:29:08','2017-02-02 04:29:08'),(13,21,'Come on Come over','mp3','03:53','uploads/music/Jazz/Jaco Pastorius/Jaco Pastorius/Come on Come over.mp3','1976','Español',20,'2017-02-02 04:29:25','2017-02-02 04:29:25'),(14,13,'Could You Be Loved','mp3','03:58','uploads/music/Reggae/Bob Marley/Live Forever/Could You Be Loved.mp3','2011','Español',8,'2017-02-02 04:29:44','2017-02-02 04:29:44'),(15,3,'Me quiero complicar','mp3','02:39','uploads/music/Plena/El Gucci/Un asco/Me quiero complicar.mp3','2013','Español',5,'2017-02-02 04:30:04','2017-02-02 04:30:04'),(16,3,'Travesuras','mp3','02:33','uploads/music/Plena/El Gucci/Un asco/Travesuras.mp3','2013','Español',2,'2017-02-02 04:30:16','2017-02-02 04:30:16'),(17,4,'Horas vacias','mp3','03:10','uploads/music/Plena/Denis Elias/El nombre del sentimiento/Horas vacias.mp3','2008','Español',20,'2017-02-02 04:30:32','2017-02-02 04:30:32'),(18,4,'Se parece mas a ti','mp3','02:18','uploads/music/Plena/Denis Elias/El nombre del sentimiento/Se parece mas a ti.mp3','2008','Español',4,'2017-02-02 04:30:44','2017-02-02 04:30:44'),(19,2,'Welcome To The Jungle','mp3','05:06','uploads/music/Metal/Guns N\' Roses/Chinese Democracy/Welcome To The Jungle.mp3','2014','Español',0,'2017-02-02 04:31:05','2017-02-02 04:31:05'),(20,16,'Survival','mp3','04:34','uploads/music/Rap/Eminem/The Marshall Mathers LP 2/Survival.mp3','2013','Español',1,'2017-02-02 04:31:23','2017-02-02 04:31:23'),(21,7,'Thriller','mp3','04:18','uploads/music/Pop/Michael Jackson/Thriller/Thriller.mp3','1982','Español',1,'2017-02-02 04:31:40','2017-02-02 04:31:40'),(22,7,'Bille jean','mp3','05:31','uploads/music/Pop/Michael Jackson/Thriller/Bille jean.mp3','1982','Español',2,'2017-02-02 04:31:53','2017-02-02 04:31:53'),(23,17,'Bronceado','mp3','02:15','uploads/music/Cumbia/Marama/Todo comenzo bailando/Bronceado.mp3','2015','Español',11,'2017-02-02 04:53:58','2017-02-02 04:53:58');
+INSERT INTO `cancion` VALUES (1,1,'Big Jack','mp3','04:01','uploads/music/Metal/AC-DC/Black Ice/Big Jack.mp3','1988','Español',32,'2017-02-01 23:14:15','2017-02-02 04:34:27'),(2,23,'Por Una Cabeza','mp3','02:44','uploads/music/Tango/Carlos Gardel/El Mago del Tango/Por Una Cabeza.mp3','2016','Español',0,'2017-02-02 04:26:13','2017-02-02 04:26:13'),(3,6,'Viajando Sin Espada','mp3','03:24','uploads/music/Rock/No Te Va A Gustar/El tiempo otra vez avanza/Viajando Sin Espada.mp3','2014','Español',11,'2017-02-02 04:26:40','2017-02-02 04:26:40'),(4,6,'Me Ilumina Hoy','mp3','03:19','uploads/music/Rock/No Te Va A Gustar/El tiempo otra vez avanza/Me Ilumina Hoy.mp3','2014','Español',9,'2017-02-02 04:27:03','2017-02-02 04:27:03'),(5,6,'Detras Del Cerro','mp3','03:44','uploads/music/Rock/No Te Va A Gustar/El tiempo otra vez avanza/Detras Del Cerro.mp3','2014','Español',2,'2017-02-02 04:27:16','2017-02-02 04:27:16'),(6,15,'Hasta El Amanecer','mp3','03:12','uploads/music/Reggaeton/Nicky Jam/Hasta El Amanecer/Hasta El Amanecer.mp3','2016','Español',14,'2017-02-02 04:27:48','2017-02-02 04:27:48'),(7,15,'Voy A Beber','mp3','03:32','uploads/music/Reggaeton/Nicky Jam/Hasta El Amanecer/Voy A Beber.mp3','2016','Español',38,'2017-02-02 04:28:00','2017-02-02 04:28:00'),(8,15,'Te Busco','mp3','03:51','uploads/music/Reggaeton/Nicky Jam/Hasta El Amanecer/Te Busco.mp3','2016','Español',17,'2017-02-02 04:28:14','2017-02-02 04:28:14'),(9,5,'Fugidinha','mp3','03:11','uploads/music/Música Brasileña/Michel Telo/Na balada/Fugidinha.mp3','2011','Español',23,'2017-02-02 04:28:32','2017-02-02 04:28:32'),(10,5,'Ai Se Eu Te Pego','mp3','02:46','uploads/music/Música Brasileña/Michel Telo/Na balada/Ai Se Eu Te Pego.mp3','2011','Español',7,'2017-02-02 04:28:41','2017-02-02 04:28:41'),(11,8,'If I Were A Boy','mp3','04:09','uploads/music/Dance/Beyonce/Yo Soy... Sasha Feroz/If I Were A Boy.mp3','2008','Español',2,'2017-02-02 04:29:01','2017-02-02 04:29:01'),(12,8,'Halo','mp3','03:45','uploads/music/Dance/Beyonce/Yo Soy... Sasha Feroz/Halo.mp3','2008','Español',2,'2017-02-02 04:29:08','2017-02-02 04:29:08'),(13,21,'Come on Come over','mp3','03:53','uploads/music/Jazz/Jaco Pastorius/Jaco Pastorius/Come on Come over.mp3','1976','Español',20,'2017-02-02 04:29:25','2017-02-02 04:29:25'),(14,13,'Could You Be Loved','mp3','03:58','uploads/music/Reggae/Bob Marley/Live Forever/Could You Be Loved.mp3','2011','Español',12,'2017-02-02 04:29:44','2017-02-02 04:29:44'),(15,3,'Me quiero complicar','mp3','02:39','uploads/music/Plena/El Gucci/Un asco/Me quiero complicar.mp3','2013','Español',5,'2017-02-02 04:30:04','2017-02-02 04:30:04'),(16,3,'Travesuras','mp3','02:33','uploads/music/Plena/El Gucci/Un asco/Travesuras.mp3','2013','Español',2,'2017-02-02 04:30:16','2017-02-02 04:30:16'),(17,4,'Horas vacias','mp3','03:10','uploads/music/Plena/Denis Elias/El nombre del sentimiento/Horas vacias.mp3','2008','Español',20,'2017-02-02 04:30:32','2017-02-02 04:30:32'),(18,4,'Se parece mas a ti','mp3','02:18','uploads/music/Plena/Denis Elias/El nombre del sentimiento/Se parece mas a ti.mp3','2008','Español',4,'2017-02-02 04:30:44','2017-02-02 04:30:44'),(19,2,'Welcome To The Jungle','mp3','05:06','uploads/music/Metal/Guns N\' Roses/Chinese Democracy/Welcome To The Jungle.mp3','2014','Español',0,'2017-02-02 04:31:05','2017-02-02 04:31:05'),(20,16,'Survival','mp3','04:34','uploads/music/Rap/Eminem/The Marshall Mathers LP 2/Survival.mp3','2013','Español',8,'2017-02-02 04:31:23','2017-02-02 04:31:23'),(21,7,'Thriller','mp3','04:18','uploads/music/Pop/Michael Jackson/Thriller/Thriller.mp3','1982','Español',1,'2017-02-02 04:31:40','2017-02-02 04:31:40'),(22,7,'Bille jean','mp3','05:31','uploads/music/Pop/Michael Jackson/Thriller/Bille jean.mp3','1982','Español',2,'2017-02-02 04:31:53','2017-02-02 04:31:53'),(23,17,'Bronceado','mp3','02:15','uploads/music/Cumbia/Marama/Todo comenzo bailando/Bronceado.mp3','2015','Español',15,'2017-02-02 04:53:58','2017-02-02 04:53:58'),(24,24,'Not Afraid','mp3','04:10','uploads/music/Rap/Eminem/Recovery/Not Afraid.mp3','2010','Español',6,'2017-02-07 05:06:06','2017-02-07 05:06:06'),(25,24,'Cold Wind Blows','mp3','04:58','uploads/music/Rap/Eminem/Recovery/Cold Wind Blows.mp3','2010','Español',3,'2017-02-07 05:08:58','2017-02-07 05:08:58'),(26,25,'Despacito','mp3','03:48','uploads/music/Reggaeton/Daddy Yankee/Despacito/Despacito.mp3','2017','Español',5,'2017-02-09 14:56:12','2017-02-09 14:56:12');
 /*!40000 ALTER TABLE `cancion` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -136,7 +136,7 @@ CREATE TABLE `favorita` (
 
 LOCK TABLES `favorita` WRITE;
 /*!40000 ALTER TABLE `favorita` DISABLE KEYS */;
-INSERT INTO `favorita` VALUES (7,14,'2017-02-03 05:55:34',NULL,NULL),(7,4,'2017-02-04 11:06:30',NULL,NULL),(8,15,'2017-02-06 06:44:08',NULL,NULL),(8,16,'2017-02-06 06:44:08',NULL,NULL),(8,17,'2017-02-06 06:44:17',NULL,NULL),(8,18,'2017-02-06 06:44:18',NULL,NULL),(8,9,'2017-02-06 06:44:24',NULL,NULL),(8,10,'2017-02-06 06:44:24',NULL,NULL),(8,6,'2017-02-06 06:44:33',NULL,NULL),(8,7,'2017-02-06 06:44:33',NULL,NULL);
+INSERT INTO `favorita` VALUES (6,4,'2017-02-07 05:16:33',NULL,NULL),(7,26,'2017-02-09 14:57:16',NULL,NULL),(8,20,'2017-02-09 15:09:14',NULL,NULL),(8,26,'2017-02-11 07:13:12',NULL,NULL),(7,6,'2017-02-11 07:30:54',NULL,NULL);
 /*!40000 ALTER TABLE `favorita` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -183,7 +183,7 @@ CREATE TABLE `img_album` (
   PRIMARY KEY (`id_img_album`),
   KEY `img_album_id_album_foreign` (`id_album`),
   CONSTRAINT `img_album_id_album_foreign` FOREIGN KEY (`id_album`) REFERENCES `album` (`id_album`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -192,7 +192,7 @@ CREATE TABLE `img_album` (
 
 LOCK TABLES `img_album` WRITE;
 /*!40000 ALTER TABLE `img_album` DISABLE KEYS */;
-INSERT INTO `img_album` VALUES (1,1,'uploads/music/Metal/AC-DC/Black Ice/Black Ice.png','2017-02-01 23:14:02','2017-02-01 23:14:02'),(2,2,'uploads/music/Metal/Guns N\' Roses/Chinese Democracy/Chinese Democracy.png','2017-02-02 03:58:14','2017-02-02 03:58:14'),(3,3,'uploads/music/Plena/El Gucci/Un asco/Un asco.jpeg','2017-02-02 03:58:59','2017-02-02 03:58:59'),(4,4,'uploads/music/Plena/Denis Elias/El nombre del sentimiento/El nombre del sentimiento.png','2017-02-02 03:59:30','2017-02-02 03:59:30'),(5,5,'uploads/music/Música Brasileña/Michel Telo/Na balada/Na balada.png','2017-02-02 04:00:01','2017-02-02 04:00:01'),(6,6,'uploads/music/Rock/No Te Va A Gustar/El tiempo otra vez avanza/El tiempo otra vez avanza.png','2017-02-02 04:00:26','2017-02-02 04:00:26'),(7,7,'uploads/music/Pop/Michael Jackson/Thriller/Thriller.png','2017-02-02 04:00:49','2017-02-02 04:00:49'),(8,8,'uploads/music/Dance/Beyonce/Yo Soy... Sasha Feroz/Yo Soy... Sasha Feroz.png','2017-02-02 04:01:18','2017-02-02 04:01:18'),(9,9,'uploads/music/Música electrónica/Zeed/Clarity/Clarity.png','2017-02-02 04:01:44','2017-02-02 04:01:44'),(10,10,'uploads/music/Música electrónica/David Guetta/Listen Again/Listen Again.png','2017-02-02 04:02:11','2017-02-02 04:02:11'),(11,11,'uploads/music/Plena/Diego Salome/La Licuadora del Sabor/La Licuadora del Sabor.png','2017-02-02 04:02:42','2017-02-02 04:02:42'),(12,12,'uploads/music/Punk/Green Day/Tré/Tré.png','2017-02-02 04:03:03','2017-02-02 04:03:03'),(13,13,'uploads/music/Reggae/Bob Marley/Live Forever/Live Forever.png','2017-02-02 04:03:26','2017-02-02 04:03:26'),(14,14,'uploads/music/Metal/AC-DC/Back in Black/Back in Black.jpeg','2017-02-02 04:04:08','2017-02-02 04:04:08'),(15,15,'uploads/music/Reggaeton/Nicky Jam/Hasta El Amanecer/Hasta El Amanecer.png','2017-02-02 04:04:35','2017-02-02 04:04:35'),(16,16,'uploads/music/Rap/Eminem/The Marshall Mathers LP 2/The Marshall Mathers LP 2.png','2017-02-02 04:05:06','2017-02-02 04:05:06'),(17,17,'uploads/music/Cumbia/Marama/Todo comenzo bailando/Todo comenzo bailando.jpeg','2017-02-02 04:15:24','2017-02-02 04:15:24'),(18,18,'uploads/music/Clasica/Max Richter/From Sleep/From Sleep.png','2017-02-02 04:16:06','2017-02-02 04:16:06'),(19,19,'uploads/music/Bachata/Romeo Santos/Formula Vol. 2/Formula Vol. 2.jpeg','2017-02-02 04:17:13','2017-02-02 04:17:13'),(20,20,'uploads/music/Blues/Freddie King/Texas cannonball/Texas cannonball.png','2017-02-02 04:17:52','2017-02-02 04:17:52'),(21,21,'uploads/music/Jazz/Jaco Pastorius/Jaco Pastorius/Jaco Pastorius.jpeg','2017-02-02 04:18:41','2017-02-02 04:18:41'),(22,22,'uploads/music/Salsa/Oscar D\' Leon/15 Exitos/15 Exitos.png','2017-02-02 04:20:16','2017-02-02 04:20:16'),(23,23,'uploads/music/Tango/Carlos Gardel/El Mago del Tango/El Mago del Tango.png','2017-02-02 04:25:35','2017-02-02 04:25:35');
+INSERT INTO `img_album` VALUES (1,1,'uploads/music/Metal/AC-DC/Black Ice/Black Ice.png','2017-02-01 23:14:02','2017-02-01 23:14:02'),(2,2,'uploads/music/Metal/Guns N\' Roses/Chinese Democracy/Chinese Democracy.png','2017-02-02 03:58:14','2017-02-02 03:58:14'),(3,3,'uploads/music/Plena/El Gucci/Un asco/Un asco.jpeg','2017-02-02 03:58:59','2017-02-02 03:58:59'),(4,4,'uploads/music/Plena/Denis Elias/El nombre del sentimiento/El nombre del sentimiento.png','2017-02-02 03:59:30','2017-02-02 03:59:30'),(5,5,'uploads/music/Música Brasileña/Michel Telo/Na balada/Na balada.png','2017-02-02 04:00:01','2017-02-02 04:00:01'),(6,6,'uploads/music/Rock/No Te Va A Gustar/El tiempo otra vez avanza/El tiempo otra vez avanza.png','2017-02-02 04:00:26','2017-02-02 04:00:26'),(7,7,'uploads/music/Pop/Michael Jackson/Thriller/Thriller.png','2017-02-02 04:00:49','2017-02-02 04:00:49'),(8,8,'uploads/music/Dance/Beyonce/Yo Soy... Sasha Feroz/Yo Soy... Sasha Feroz.png','2017-02-02 04:01:18','2017-02-02 04:01:18'),(9,9,'uploads/music/Música electrónica/Zeed/Clarity/Clarity.png','2017-02-02 04:01:44','2017-02-02 04:01:44'),(10,10,'uploads/music/Música electrónica/David Guetta/Listen Again/Listen Again.png','2017-02-02 04:02:11','2017-02-02 04:02:11'),(11,11,'uploads/music/Plena/Diego Salome/La Licuadora del Sabor/La Licuadora del Sabor.png','2017-02-02 04:02:42','2017-02-02 04:02:42'),(12,12,'uploads/music/Punk/Green Day/Tré/Tré.png','2017-02-02 04:03:03','2017-02-02 04:03:03'),(13,13,'uploads/music/Reggae/Bob Marley/Live Forever/Live Forever.png','2017-02-02 04:03:26','2017-02-02 04:03:26'),(14,14,'uploads/music/Metal/AC-DC/Back in Black/Back in Black.jpeg','2017-02-02 04:04:08','2017-02-02 04:04:08'),(15,15,'uploads/music/Reggaeton/Nicky Jam/Hasta El Amanecer/Hasta El Amanecer.png','2017-02-02 04:04:35','2017-02-02 04:04:35'),(16,16,'uploads/music/Rap/Eminem/The Marshall Mathers LP 2/The Marshall Mathers LP 2.png','2017-02-02 04:05:06','2017-02-02 04:05:06'),(17,17,'uploads/music/Cumbia/Marama/Todo comenzo bailando/Todo comenzo bailando.jpeg','2017-02-02 04:15:24','2017-02-02 04:15:24'),(18,18,'uploads/music/Clasica/Max Richter/From Sleep/From Sleep.png','2017-02-02 04:16:06','2017-02-02 04:16:06'),(19,19,'uploads/music/Bachata/Romeo Santos/Formula Vol. 2/Formula Vol. 2.jpeg','2017-02-02 04:17:13','2017-02-02 04:17:13'),(20,20,'uploads/music/Blues/Freddie King/Texas cannonball/Texas cannonball.png','2017-02-02 04:17:52','2017-02-02 04:17:52'),(21,21,'uploads/music/Jazz/Jaco Pastorius/Jaco Pastorius/Jaco Pastorius.jpeg','2017-02-02 04:18:41','2017-02-02 04:18:41'),(22,22,'uploads/music/Salsa/Oscar D\' Leon/15 Exitos/15 Exitos.png','2017-02-02 04:20:16','2017-02-02 04:20:16'),(23,23,'uploads/music/Tango/Carlos Gardel/El Mago del Tango/El Mago del Tango.png','2017-02-02 04:25:35','2017-02-02 04:25:35'),(24,24,'uploads/music/Rap/Eminem/Recovery/Recovery.jpeg','2017-02-07 05:05:44','2017-02-07 05:05:44'),(25,25,'uploads/music/Reggaeton/Daddy Yankee/Despacito/Despacito.jpeg','2017-02-09 14:55:59','2017-02-09 14:55:59');
 /*!40000 ALTER TABLE `img_album` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -270,7 +270,7 @@ CREATE TABLE `img_usuario` (
   PRIMARY KEY (`id_img_usuario`),
   KEY `img_usuario_id_usuario_foreign` (`id_usuario`),
   CONSTRAINT `img_usuario_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -279,7 +279,7 @@ CREATE TABLE `img_usuario` (
 
 LOCK TABLES `img_usuario` WRITE;
 /*!40000 ALTER TABLE `img_usuario` DISABLE KEYS */;
-INSERT INTO `img_usuario` VALUES (1,1,'avatars/admin.jpg',NULL,NULL),(2,2,'avatars/luis.jpg','2017-02-01 23:13:07','2017-02-01 23:13:07'),(3,3,'https://scontent.xx.fbcdn.net/v/t1.0-1/c15.0.50.50/p50x50/10354686_10150004552801856_220367501106153455_n.jpg?oh=978df650af5b925f321fe4050af2869f&oe=5911542F',NULL,NULL),(4,6,'https://lh5.googleusercontent.com/-NYWw90XMrs0/AAAAAAAAAAI/AAAAAAAAA48/p_dKOQB4m6A/s96-c/photo.jpg',NULL,NULL),(5,7,'Uploads/aberon.jpeg',NULL,NULL);
+INSERT INTO `img_usuario` VALUES (1,1,'avatars/admin.jpg',NULL,NULL),(2,2,'avatars/luis.jpg','2017-02-01 23:13:07','2017-02-01 23:13:07'),(3,3,'https://scontent.xx.fbcdn.net/v/t1.0-1/c15.0.50.50/p50x50/10354686_10150004552801856_220367501106153455_n.jpg?oh=978df650af5b925f321fe4050af2869f&oe=5911542F',NULL,NULL),(4,6,'https://lh5.googleusercontent.com/-NYWw90XMrs0/AAAAAAAAAAI/AAAAAAAAA48/p_dKOQB4m6A/s96-c/photo.jpg',NULL,NULL),(5,7,'Uploads/aberon.jpeg',NULL,NULL),(6,8,'Uploads/jose.jpeg',NULL,NULL);
 /*!40000 ALTER TABLE `img_usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -296,7 +296,7 @@ CREATE TABLE `lista` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id_lista`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,7 +305,7 @@ CREATE TABLE `lista` (
 
 LOCK TABLES `lista` WRITE;
 /*!40000 ALTER TABLE `lista` DISABLE KEYS */;
-INSERT INTO `lista` VALUES (1,'test',NULL,NULL),(2,'Jazz',NULL,NULL),(4,'Reggaeton',NULL,NULL),(5,'Test',NULL,NULL),(6,'Plena',NULL,NULL),(7,'Cumbia',NULL,NULL),(8,'Cumbia',NULL,NULL),(9,'Cumbia',NULL,NULL),(11,'Jazz',NULL,NULL);
+INSERT INTO `lista` VALUES (4,'Mi Lista',NULL,NULL),(5,'Mi Otra Lista',NULL,NULL),(6,'Rap',NULL,NULL),(9,'Reggaeton',NULL,NULL);
 /*!40000 ALTER TABLE `lista` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -335,7 +335,7 @@ CREATE TABLE `lista_cancion` (
 
 LOCK TABLES `lista_cancion` WRITE;
 /*!40000 ALTER TABLE `lista_cancion` DISABLE KEYS */;
-INSERT INTO `lista_cancion` VALUES (13,2,'2017-02-03 06:22:42',NULL,NULL),(8,4,'2017-02-04 11:00:07',NULL,NULL),(13,5,'2017-02-05 03:59:41',NULL,NULL),(9,5,'2017-02-05 05:39:52',NULL,NULL),(17,6,'2017-02-05 05:45:24',NULL,NULL),(13,11,'2017-02-06 06:47:21',NULL,NULL);
+INSERT INTO `lista_cancion` VALUES (7,4,'2017-02-07 04:52:01',NULL,NULL),(20,6,'2017-02-07 04:57:33',NULL,NULL),(26,9,'2017-02-09 14:57:00',NULL,NULL),(24,6,'2017-02-09 15:04:06',NULL,NULL);
 /*!40000 ALTER TABLE `lista_cancion` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -375,13 +375,13 @@ CREATE TABLE `paga_suscribe` (
   `id_factura` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `id_usuario` int(10) unsigned NOT NULL,
   `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `monto` int(10) unsigned NOT NULL,
+  `monto` varchar(10) COLLATE utf8_spanish_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id_factura`),
   KEY `paga_suscribe_id_usuario_foreign` (`id_usuario`),
   CONSTRAINT `paga_suscribe_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -390,6 +390,7 @@ CREATE TABLE `paga_suscribe` (
 
 LOCK TABLES `paga_suscribe` WRITE;
 /*!40000 ALTER TABLE `paga_suscribe` DISABLE KEYS */;
+INSERT INTO `paga_suscribe` VALUES (2,6,'2017-02-10 03:00:00','5.99','2017-02-10 13:12:58','2017-02-10 13:12:58'),(3,3,'2017-02-10 03:00:00','5.99','2017-02-10 13:18:33','2017-02-10 13:18:33'),(8,8,'2017-02-11 03:00:00','5.99','2017-02-11 07:26:50','2017-02-11 07:26:50');
 /*!40000 ALTER TABLE `paga_suscribe` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -474,7 +475,7 @@ CREATE TABLE `recomendado` (
 
 LOCK TABLES `recomendado` WRITE;
 /*!40000 ALTER TABLE `recomendado` DISABLE KEYS */;
-INSERT INTO `recomendado` VALUES (6,2,NULL,NULL),(6,5,NULL,NULL),(6,3,NULL,NULL),(7,7,NULL,NULL),(7,10,NULL,NULL),(7,18,NULL,NULL),(7,6,NULL,NULL),(7,3,NULL,NULL),(3,1,NULL,NULL);
+INSERT INTO `recomendado` VALUES (8,9,NULL,NULL),(8,6,NULL,NULL),(6,2,NULL,NULL),(6,5,NULL,NULL),(6,3,NULL,NULL),(3,1,NULL,NULL),(7,7,NULL,NULL),(7,10,NULL,NULL),(7,18,NULL,NULL),(7,6,NULL,NULL),(7,3,NULL,NULL);
 /*!40000 ALTER TABLE `recomendado` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -495,7 +496,7 @@ CREATE TABLE `tarea` (
   PRIMARY KEY (`id_tarea`),
   KEY `tarea_id_usuario_foreign` (`id_usuario`),
   CONSTRAINT `tarea_id_usuario_foreign` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -504,6 +505,7 @@ CREATE TABLE `tarea` (
 
 LOCK TABLES `tarea` WRITE;
 /*!40000 ALTER TABLE `tarea` DISABLE KEYS */;
+INSERT INTO `tarea` VALUES (1,1,'Terminar Graficas','PENDIENTE','2017-02-09 15:12:57','2017-02-09 15:12:57'),(2,1,'Indicadores','PENDIENTE','2017-02-09 15:13:05','2017-02-09 15:13:05'),(3,1,'Tablas responsives','PENDIENTE','2017-02-09 15:13:26','2017-02-09 15:13:26');
 /*!40000 ALTER TABLE `tarea` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -588,7 +590,7 @@ CREATE TABLE `usuario` (
   UNIQUE KEY `usuario_usuario_unique` (`usuario`),
   KEY `usuario_id_tipo_usuario_foreign` (`id_tipo_usuario`),
   CONSTRAINT `usuario_id_tipo_usuario_foreign` FOREIGN KEY (`id_tipo_usuario`) REFERENCES `tipo_usuario` (`id_tipo_usr`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -597,7 +599,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,1,'admin','Juan','Perez','thermoteam2016@gmail.com','$2y$10$XnDXCy7ktG8it7wYX/9Oiufa7ac0kBwvfOplLoX0t3UxUbCEbY3LG','1985-09-22','M',NULL,'S',NULL,NULL,NULL,NULL,NULL,'2017-02-01 23:12:34'),(2,2,'luis','Luis','Rodriguez','thermoteam2016@gmail.com','$2y$10$KksZm3hgiua.FfErDSKc0Oyg8rEreu6xSouZ8VkI0LMDel84jGQla','1980-01-02','M',NULL,'S',NULL,NULL,NULL,NULL,'2017-02-01 23:13:07','2017-02-01 23:55:33'),(3,4,'thermoteam2016@gmail.com','Walter','White','thermoteam2016@gmail.com','','0000-00-00','M','','S','',0,2147483647,NULL,NULL,NULL),(6,4,'alejandroberon10@gmail.com','Alejandro','Berón','alejandroberon10@gmail.com','','0000-00-00','','','S','',2147483647,0,NULL,NULL,NULL),(7,3,'aberon','','','alejandroberon10@gmail.com','$2y$10$xeVWEVzO8ESxnZroFWWrU.vo3b29mni.WOU0e4yQDm7a51JRxEppK','1995-01-12','M','ec300e237f75307168e21db3b41548982ed2f816','S','017958',0,0,NULL,NULL,NULL),(8,5,'demo','','','','','0000-00-00','','','N','',0,0,NULL,NULL,NULL);
+INSERT INTO `usuario` VALUES (1,1,'admin','Juan','Perez','thermoteam2016@gmail.com','$2y$10$XnDXCy7ktG8it7wYX/9Oiufa7ac0kBwvfOplLoX0t3UxUbCEbY3LG','1985-09-22','M',NULL,'S',NULL,NULL,NULL,NULL,NULL,'2017-02-11 08:01:32'),(2,2,'luis','Luis','Rodriguez','thermoteam2016@gmail.com','$2y$10$KksZm3hgiua.FfErDSKc0Oyg8rEreu6xSouZ8VkI0LMDel84jGQla','1980-01-02','M',NULL,'S',NULL,NULL,NULL,NULL,'2017-02-01 23:13:07','2017-02-01 23:55:33'),(3,3,'thermoteam2016@gmail.com','Walter','White','thermoteam2016@gmail.com','','0000-00-00','M','','S','',0,2147483647,NULL,NULL,NULL),(6,3,'alejandroberon10@gmail.com','Alejandro','Berón','alejandroberon10@gmail.com','','0000-00-00','','','S','',2147483647,0,NULL,NULL,NULL),(7,3,'aberon','','','alejandroberon10@gmail.com','$2y$10$j/1KFspsJ6b/AJDYXHBqEezhVNHWopyzmP.QIDWVo6r4r2CYSt/se','1995-01-12','M','ec300e237f75307168e21db3b41548982ed2f816','S','017958',0,0,NULL,NULL,NULL),(8,3,'jose','','','alejandroberon10@gmail.com','$2y$10$C5JtAdsmw3jA.C3pRYPOGOyOvJA3XM0lEW9pcNvTgxO/FEOd6PVTy','1989-03-19','M','aa4c2d5faa84fd97a37b0a51da888f9ce3288fed','S','374215',0,0,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -627,7 +629,7 @@ CREATE TABLE `usuario_cancion` (
 
 LOCK TABLES `usuario_cancion` WRITE;
 /*!40000 ALTER TABLE `usuario_cancion` DISABLE KEYS */;
-INSERT INTO `usuario_cancion` VALUES (6,8,'2017-02-02 04:39:46',NULL,NULL),(7,10,'2017-02-03 05:58:14',NULL,NULL),(7,17,'2017-02-03 06:03:47',NULL,NULL),(7,9,'2017-02-03 06:08:59',NULL,NULL),(7,23,'2017-02-03 06:35:14',NULL,NULL);
+INSERT INTO `usuario_cancion` VALUES (6,8,'2017-02-02 04:39:46',NULL,NULL),(7,10,'2017-02-03 05:58:14',NULL,NULL),(7,17,'2017-02-03 06:03:47',NULL,NULL),(7,9,'2017-02-03 06:08:59',NULL,NULL),(7,23,'2017-02-03 06:35:14',NULL,NULL),(8,20,'2017-02-07 04:57:54',NULL,NULL);
 /*!40000 ALTER TABLE `usuario_cancion` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -657,7 +659,7 @@ CREATE TABLE `usuario_lista` (
 
 LOCK TABLES `usuario_lista` WRITE;
 /*!40000 ALTER TABLE `usuario_lista` DISABLE KEYS */;
-INSERT INTO `usuario_lista` VALUES (3,1,'2017-02-01 23:26:05',NULL,NULL),(7,2,'2017-02-03 06:22:42',NULL,NULL),(7,4,'2017-02-04 11:00:07',NULL,NULL),(7,5,'2017-02-05 03:59:28',NULL,NULL),(7,6,'2017-02-05 05:45:24',NULL,NULL),(8,9,'2017-02-06 06:36:15',NULL,NULL),(8,11,'2017-02-06 06:47:04',NULL,NULL);
+INSERT INTO `usuario_lista` VALUES (8,4,'2017-02-07 04:32:54',NULL,NULL),(8,5,'2017-02-07 04:33:03',NULL,NULL),(8,6,'2017-02-07 04:57:33',NULL,NULL),(7,9,'2017-02-08 05:08:08',NULL,NULL);
 /*!40000 ALTER TABLE `usuario_lista` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -670,4 +672,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-02-06  4:45:31
+-- Dump completed on 2017-02-11  5:09:02
